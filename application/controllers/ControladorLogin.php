@@ -9,4 +9,8 @@ class ControladorLogin extends CI_Controller
         $this->load->view('login_register/login');
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 }

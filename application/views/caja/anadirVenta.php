@@ -115,6 +115,7 @@
 			</div>
 		</div>
 		<!-- Scrip de pruebas aca va la funcionalidad de agregarr los datos a la tabla que sera pasada a la base de datos-->
+<<<<<<< HEAD
 		<script>
 			$(document).ready(function() {
 				$("#btnAnadirProducto").click(function() {
@@ -128,6 +129,9 @@
 				}
 			});
 		</script>
+=======
+
+>>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 	</body>
 
 	</html>
