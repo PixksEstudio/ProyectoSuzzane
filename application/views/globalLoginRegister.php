@@ -1,9 +1,5 @@
     <!DOCTYPE html>
     <html lang="en">
-<<<<<<< HEAD
-=======
-
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +8,6 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<<<<<<< HEAD
-        <link rel="stylesheet" href="<?php echo base_url();?>assets/css/styles.css">
-        <link rel="stylesheet" href="<?php echo base_url();?>assets/css/stylesLoginRegister.css">
-        <link rel="icon" type="image/x-ico" href="<?php echo base_url(); ?>assets/images/favicon.ico">
-        <title>Mi Quesera</title>
-    </head>
-    <body>
-        
-    </body>
-    </html>
-=======
         <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.1.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/loginScript.js"></script>
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css
@@ -37,4 +22,3 @@
     </body>
 
     </html>
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)

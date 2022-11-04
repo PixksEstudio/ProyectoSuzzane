@@ -115,23 +115,6 @@
 			</div>
 		</div>
 		<!-- Scrip de pruebas aca va la funcionalidad de agregarr los datos a la tabla que sera pasada a la base de datos-->
-<<<<<<< HEAD
-		<script>
-			$(document).ready(function() {
-				$("#btnAnadirProducto").click(function() {
-					event.preventDefault();
-					agregarFila();
-				});
-
-				function agregarFila() {
-					var htmlTags = '<tr> <td> miCodigo </td> <td> miCodigo </td> <td> miCodigo </td> <td> miCodigo </td> <td> miCodigo </td> <td> miCodigo </td> </tr>;'
-					$('#tablaGeneral tbody').append(htmlTags);
-				}
-			});
-		</script>
-=======
-
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 	</body>
 
 	</html>

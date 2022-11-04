@@ -78,11 +78,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-<<<<<<< HEAD
-	'database' => 'bd_sistema',
-=======
 	'database' => 'bd_desarrollo',
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

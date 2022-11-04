@@ -8,8 +8,6 @@ class ControladorInicio extends CI_Controller
         $this->load->view('menuGlobal');
         $this->load->view('inicio');
     }
-<<<<<<< HEAD
-=======
 
     public function consultar_dato()
     {
@@ -26,5 +24,4 @@ class ControladorInicio extends CI_Controller
             $this->load->view('login_register/login');
         }
     }
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 }

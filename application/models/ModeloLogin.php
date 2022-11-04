@@ -3,9 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class ModeloLogin extends CI_Model
 {
-<<<<<<< HEAD
-
-=======
     public function m_verificarDato($usuario, $clave)
     {
         $query_select = $this->db->query("SELECT * FROM usuario WHERE nombre_usuario = '$usuario' AND clave_usuario = '$clave'");
@@ -16,5 +13,4 @@ class ModeloLogin extends CI_Model
             return false;
         }
     }
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 }

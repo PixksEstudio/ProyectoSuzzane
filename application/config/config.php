@@ -26,14 +26,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 //Office
 //$config['base_url'] = 'http://192.168.0.10/app/';
 //Institute
-<<<<<<< HEAD
-$config['base_url'] = 'http://10.0.5.85/app/';
-=======
 //$config['base_url'] = 'http://10.0.5.85/app/';
 //Global
 $config['base_url'] = 'http://localhost/app/';
 
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 
 /*
 |--------------------------------------------------------------------------
@@ -88,11 +84,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-<<<<<<< HEAD
-$config['language']	= 'spanish';
-=======
 $config['language']	= 'english';
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 
 /*
 |--------------------------------------------------------------------------

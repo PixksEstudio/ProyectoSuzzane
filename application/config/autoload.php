@@ -58,11 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-<<<<<<< HEAD
-$autoload['libraries'] = array(); //Base dato 'database'
-=======
 $autoload['libraries'] = array('database'); //Base dato 'database'
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
 
 /*
 | -------------------------------------------------------------------

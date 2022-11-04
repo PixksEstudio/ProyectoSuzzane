@@ -11,10 +11,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.1.min.js"></script>
-<<<<<<< HEAD
-=======
     <script src="<?php echo base_url(); ?>assets/js/cajaScript.js"></script>
->>>>>>> 86dc500 (Verificacion de usuario y clave en login)
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylesMenu.css">
     <link rel="icon" type="image/x-ico" href="<?php echo base_url(); ?>assets/images/favicon.ico">
