@@ -11,7 +11,7 @@
 
     <body>
         <div class="container">
-            <div style="height: 100vh;background-color: #fff;border: 2px solid #e5e7ec;border-top-left-radius: 10px;border-top-right-radius: 10px;padding: 1em;">
+            <div class="contenerdorPrincipal">
                 <div class="row">
                     <div class="col-xl-6 col-sm-12">
                         <h1>Estoy</h1>

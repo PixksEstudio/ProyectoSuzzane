@@ -1,5 +1,6 @@
     <!DOCTYPE html>
     <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +13,14 @@
         <script src="<?php echo base_url(); ?>assets/js/loginScript.js"></script>
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css
         <link rel=" stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylesLoginRegister.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylesSesion.css">
         <link rel="icon" type="image/x-ico" href="<?php echo base_url(); ?>assets/images/favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+        <style>
+            body {
+                font-family: 'Amaranth', serif;
+            }
+        </style>
         <title>Mi Quesera</title>
     </head>
 

@@ -1,14 +1,5 @@
 <php>
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-
+  <html>
   <body>
     <div class="content-body">
       <div class="form-wrapper">
@@ -24,7 +15,7 @@
         </form>
 
         <div class="bg-grey">
-          <a href="<?php echo base_url(); ?>index.php/ControladorLogin/index" class="link-register">Inicia Sesión</a>
+          <a href="<?php echo base_url(); ?>index.php/cSesion/ccIniciar" class="link-register">Inicia Sesión</a>
         </div>
       </div>
     </div>

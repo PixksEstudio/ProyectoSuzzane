@@ -1,15 +1,16 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class ControladorInicio extends CI_Controller
+class cInicio extends CI_Controller
 {
-    public function index()
+    //Carga la pagina que se ve al iniciar sesion
+    public function ccInicio()
     {
         $this->load->view('menuGlobal');
         $this->load->view('inicio');
     }
 
-    public function consultar_dato()
+    /*public function consultar_dato()
     {
         $usuario = $this->input->post('usuarioLogin');
         $clave = $this->input->post('claveLogin');
@@ -23,5 +24,5 @@ class ControladorInicio extends CI_Controller
             $this->load->view('globalLoginRegister');
             $this->load->view('login_register/login');
         }
-    }
+    }*/
 }

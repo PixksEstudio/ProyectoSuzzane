@@ -11,27 +11,11 @@
 
 	<body>
 		<div class="container">
-			<div style="
-						height: 100vh;
-						background-color: #fff;
-						border: 2px solid #e5e7ec;
-						border-top-left-radius: 10px;
-						border-top-right-radius: 10px;
-						padding: 1em;
-					">
+			<div class="contenerdorPrincipal">
 				<div class="row">
 					<div class="row">
 						<div class="col-xl-6 col-sm-12">
-							<!--PRUEBA CARD -------------------------------->
-							<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<!--PRUEBA CARD -------------------------------->
+							<!-- Carro de venta -->
 							<div class="pt-xl-5">
 								<div class="table-responsive">
 									<table class="table table-bordered table-sm" id="tablaGeneral">
@@ -72,6 +56,7 @@
 							</div>
 						</div>
 						<div class="col-xl-6 col-sm-12">
+							<!-- Añadir producto a carro de venta -->
 							<h1 class="text-center">Venta</h1>
 							<form>
 								<div class="form-group">
@@ -109,13 +94,15 @@
 									<input type="submit" class="btn btn-success" value="Añadir Producto" id="btnAnadirProducto" />
 								</div>
 							</form>
+							<!-- Cierre de caja -->
+							<div class="text-end">
+								<a href="<?php echo base_url(); ?>index.php/cCaja/ccArqueoCierre"><input type="button" class="btn btn-warning" value="Cerrar Caja" /></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Scrip de pruebas aca va la funcionalidad de agregarr los datos a la tabla que sera pasada a la base de datos-->
 	</body>
-
 	</html>
 </php>

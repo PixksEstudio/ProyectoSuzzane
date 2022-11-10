@@ -11,14 +11,14 @@
 
     <body>
         <div class="container">
-            <div style="height: 100vh;background-color: #fff;border: 2px solid #e5e7ec;border-top-left-radius: 10px;border-top-right-radius: 10px;padding: 1em;">
+            <div class="contenerdorPrincipal">
                 <div class="row">
                     <div class="col-sm-12 col-xl-6 offset-xl-3">
                         <h1 class="text-center">Apertura De Caja</h1>
                         <form>
                             <div class="form-group">
                                 <label for="dineroApertura">Dinero Inicial</label>
-                                <input type="text" placeholder="Dinero Inical" id="dineroInicial" class="form-control">
+                                <input type="number" placeholder="Dinero Inical" id="dineroInicial" class="form-control">
                             </div>
                             <fieldset disabled>
                                 <div class="form-group">
@@ -45,12 +45,14 @@
     </body>
 
     <script>
-        var year = new Date().getFullYear()
+        /*var year = new Date().getFullYear()
         var month = new Date().getMonth()
         var day = new Date().getDate()
         var hour = new Date().getHours()
         document.getElementById("fechaApertura").value = day + "/" + month + "/" + year
-        document.getElementById("horaApertura").value = hour + ":" + new Date().getMinutes()
+        document.getElementById("horaApertura").value = hour + ":" + new Date().getMinutes()*/
+        document.getElementById("fechaApertura").value = new Date().toLocaleDateString()
+        document.getElementById("horaApertura").value = new Date().toLocaleTimeString()
     </script>
 
     </html>

@@ -24,11 +24,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 //Office
-//$config['base_url'] = 'http://192.168.0.10/app/';
+//$config['base_url'] = 'http://192.168.0.10/ProyectoSuzzane/';
 //Institute
-//$config['base_url'] = 'http://10.0.5.85/app/';
+$config['base_url'] = 'http://10.0.5.85/ProyectoSuzzane/';
 //Global
-$config['base_url'] = 'http://localhost/app/';
+//$config['base_url'] = 'http://localhost/ProyectoSuzzane/';
 
 
 /*
