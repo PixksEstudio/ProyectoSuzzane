@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylesMenu.css">
     <link rel="icon" type="image/x-ico" href="<?php echo base_url(); ?>assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amaranth">
+    <style>
+        body {
+            font-family: 'Amaranth', serif;
+        }
+    </style>
     <title>Mi Quesera</title>
 </head>
 
@@ -26,7 +32,7 @@
     <nav>
         <div class="logo">
             <i class="bx bx-menu menu-icon"></i>
-            <a href="<?php echo base_url(); ?>index.php/ControladorInicio/index" class="nav-link">
+            <a href="<?php echo base_url(); ?>index.php/cInicio/ccInicio" class="nav-link">
                 <span class="logo-name">Mi Quesera</span>
             </a>
         </div>
@@ -46,9 +52,9 @@
                                 <span class="link">Caja</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #046ca2;">
-                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/ControladorCaja/index">Arqueo Caja</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/ControladorCaja/venta">Ventas</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/ControladorCaja/verVenta">Ver Ventas</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccArqueoAbrir">Arqueo Caja</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccVenta">Ventas</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccRegistroVenta">Registro Ventas</a></li>
                             </ul>
                         </div>
                     </li>
@@ -59,9 +65,9 @@
                                 <span class="link">Inventario</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #046ca2;">
-                                <li><a class="dropdown-item" href="#">Producto</a></li>
-                                <li><a class="dropdown-item" href="#">Categoria De Producto</a></li>
-                                <li><a class="dropdown-item" href="#">Ver Inventario</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccProducto">Productos</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccTipoProducto">Tipos De Productos</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccVerInventario">Ver Inventario</a></li>
                             </ul>
                         </div>
                     </li>
@@ -72,8 +78,8 @@
                                 <span class="link">Herramienta</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #046ca2;">
-                                <li><a class="dropdown-item" href="#">Crear Codigo De Barra</a></li>
-                                <li><a class="dropdown-item" href="#">Exportar Inventario</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cHerramienta/ccCodigoBarra">Codigo De Barra</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cHerramienta/ccReporte">Reportes</a></li>
                             </ul>
                         </div>
                     </li>
@@ -81,13 +87,13 @@
 
                 <div class="bottom-cotent">
                     <li class="list">
-                        <a href="#" class="nav-link">
+                        <a href="<?php echo base_url(); ?>index.php/cConfiguracion/ccConfiguracion" class="nav-link">
                             <i class="bx bx-cog icon"></i>
                             <span class="link">Configuración</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="<?php echo base_url(); ?>index.php/ControladorLogin/index" class="nav-link">
+                        <a href="<?php echo base_url(); ?>index.php/cSesion/ccIniciar" class="nav-link">
                             <i class="bx bx-log-out icon"></i>
                             <span class="link">Cerrar Sesión</span>
                         </a>

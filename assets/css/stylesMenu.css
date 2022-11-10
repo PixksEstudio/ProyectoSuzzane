@@ -3,7 +3,7 @@
 
 nav {
 	/* si ocasiona error quitar el postion fixed*/
-	/*position: fixed;*/
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 70px;
