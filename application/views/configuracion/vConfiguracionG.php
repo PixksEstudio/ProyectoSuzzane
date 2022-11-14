@@ -10,7 +10,7 @@
                         <h1>izquierda</h1>
                     </div>
                     <div class="col-xl-6 col-sm-12">
-                        <h1>derecha</h1>
+                        <h1>derecha General</h1>
                     </div>
                 </div>
             </div>

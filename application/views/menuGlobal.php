@@ -93,7 +93,7 @@
                         </a>
                     </li>
                     <li class="list">
-                        <a href="<?php echo base_url(); ?>index.php/cSesion/ccIniciar" class="nav-link">
+                        <a href="<?php echo base_url(); ?>index.php/cSesion/ccCerrar" class="nav-link">
                             <i class="bx bx-log-out icon"></i>
                             <span class="link">Cerrar Sesión</span>
                         </a>
