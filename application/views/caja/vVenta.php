@@ -1,13 +1,4 @@
 <php>
-	<!DOCTYPE html>
-	<html lang="en">
-
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
 
 	<body>
 		<div class="container">
@@ -59,18 +50,12 @@
 						<h1 class="text-center">Venta</h1>
 						<form>
 							<div class="form-group">
-								<label for="dineroApertura">Codigo</label>
-								<input type="text" placeholder="Codigo De Producto" id="dineroInicial" class="form-control" />
+								<label for="txt_codigoBarra">Codigo De Barra</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Codigo De Barra" id="txt_codigoBarra" name="txt_codigoBarra">
+									<button class="btn btn-outline-dark" type="button" id="btn_escanerCodigoBarra">Escanear Codigo De Barra</button>
+								</div>
 							</div>
-							<!--<div class="form-group">
-									<p id="passwordHelpBlock" class="form-text text-muted">
-										O tambien puedes escanear el codigo de barra:
-									</p>
-									<a class="stretched-link" href="#">
-										<h1 class="bx bx-barcode-reader"></h1>
-									</a>
-								</div>-->
-							<!-- aca va una imagen de un codigo de barra-->
 							<div class="form-group">
 								<label for="seleectConcepto">Concepto</label>
 								<select id="seleectConcepto" class="form-select">

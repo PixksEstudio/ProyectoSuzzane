@@ -15,7 +15,11 @@
             <input class="input" type="password" id="txtClaveIniciar" name="txtClaveIniciar" placeholder="Ingrese Clave" required />
             <a href="<?php echo base_url(); ?>index.php/cSesion/ccRecuperar" class="link-forgot">Olvidada?</a>
           </div>
-          <?php echo $mensaje; ?>
+          <?php
+          if (isset($mensaje)) {
+            echo $mensaje;
+          }
+          ?>
           <div class="field-group">
             <input id="btnIniciar" class="btn-submit" type="submit" value="Inicia Sesión" />
           </div>

@@ -1,26 +1,28 @@
 <php>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
 
     <body>
         <div class="container">
             <div class="contenerdorPrincipal">
                 <div class="row">
-                    <div class="col-xl-6 col-sm-12">
-                        <h1>Estoy</h1>
-                    </div>
-                    <div class="col-xl-6 col-sm-12">
-                        <h1>Ver Venta</h1>
+                    <div class="col-10 offset-xl-1">
+                        <table class="table table-bordered" id="tablaGeneral">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Fecha Venta</th>
+                                    <th scope="col">Total Venta</th>
+                                    <th scope="col">Cliente</th>
+                                    <th scope="col">Detalles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 

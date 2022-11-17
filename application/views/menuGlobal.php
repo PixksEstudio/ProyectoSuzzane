@@ -11,6 +11,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="<?php echo base_url(); ?>assets/js/jquery-3.6.1.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/JsBarcode.all.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/cajaScript.js"></script>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/stylesMenu.css">
@@ -24,7 +25,7 @@
     <title>Mi Quesera</title>
 </head>
 
-<body style="background-image: -webkit-radial-gradient(
+<body style="height: 100%; background-image: -webkit-radial-gradient(
 			rgba(0, 0, 0, 0.5),
 			rgba(0, 0, 0, 0.5)
 		),
@@ -65,7 +66,9 @@
                                 <span class="link">Inventario</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #046ca2;">
-                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccProducto">Productos</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccProductoExistencia">Producto: Actualizar Existencia En Inventario</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccProductoRegistrar">Producto: Registrar Nuevo Producto</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccProductoActualizar">Producto: Actualizar Datos De Producto Existente</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccTipoProducto">Tipos De Productos</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cInventario/ccVerInventario">Ver Inventario</a></li>
                             </ul>
