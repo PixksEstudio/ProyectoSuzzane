@@ -1,6 +1,5 @@
 <php>
 
-
     <body>
         <div class="container">
             <div class="contenerdorPrincipal">
@@ -30,10 +29,9 @@
                                 <input type="submit" class="btn btn-success" value="Abrir Caja" id="btn_abirCajar_vArqueoAbrir">
                             </div>
                             <?php
-                            //Mostrar mensaje flashdata
-                            if (isset($mensaje)) {
-                                echo $mensaje;
-                            }
+                            if (isset($mensaje)) { ?>
+                                <span id="mensajeErrorArqueoAbrir"><?php echo $mensaje; ?></span>
+                            <?php }
                             ?>
                         </form>
                     </div>
