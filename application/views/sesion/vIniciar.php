@@ -16,9 +16,9 @@
             <a href="<?php echo base_url(); ?>index.php/cSesion/ccRecuperar" class="link-forgot">Olvidada?</a>
           </div>
           <?php
-          if (isset($mensaje)) {
-            echo $mensaje;
-          }
+          if (isset($mensaje)) { ?>
+            <span id="mensajeErrorIniciar"><?php echo $mensaje; ?></span>
+          <?php }
           ?>
           <div class="field-group">
             <input id="btnIniciar" class="btn-submit" type="submit" value="Inicia Sesión" />

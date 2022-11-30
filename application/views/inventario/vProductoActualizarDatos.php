@@ -1,6 +1,4 @@
 <php>
-
-
     <body>
         <div class="container">
             <div class="contenerdorPrincipal">

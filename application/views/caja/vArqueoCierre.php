@@ -44,15 +44,8 @@
     </body>
 
    <script>
-        /*var year = new Date().getFullYear()
-        var month = new Date().getMonth()
-        var day = new Date().getDate()
-        var hour = new Date().getHours()
-        document.getElementById("fechaCierre").value = day + "-" + month + "-" + year
-        document.getElementById("horaCierre").value = hour + ":" + new Date().getMinutes()*/
         document.getElementById("fechaCierre").value = new Date().toLocaleDateString()
         document.getElementById("horaCierre").value = new Date().toLocaleTimeString()
-
     </script>
 
     </html>
