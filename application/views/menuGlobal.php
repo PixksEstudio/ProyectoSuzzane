@@ -55,7 +55,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #046ca2;">
                                 <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccArqueoAbrir">Arqueo Caja</a></li>
                                 <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccVenta">Ventas</a></li>
-                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccRegistroVenta">Registro Ventas</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url(); ?>index.php/cCaja/ccHistorialVenta">Historial De Ventas</a></li>
                             </ul>
                         </div>
                     </li>

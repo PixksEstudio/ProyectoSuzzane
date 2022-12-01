@@ -30,32 +30,16 @@ class cInventario extends CI_Controller
         $this->load->view('inventario/vProductoActualizarExistencia.php', $data);
     }
 
-    //Actualizar los inputs de la vista de Producto: Actualizar Existencia En Inventario
-    public function ccActualizar_vProductoActualizarExistencia()
-    {
-        $id_producto = $this->input->post('id_producto');
-        $datosJson = $this->mInventario->mmTraerProductoPorId($id_producto);
-        echo json_encode($datosJson);
-        //No Borrar esta linea soluciona el error de que la variable datosJson traiga todo el html de la pagina
-        die();
-    }
+
 
     //Producto: Actualizar Datos De Producto
     public function ccProductoActualizar()
     {
         $data['productos'] = $this->mInventario->mmTraerProductosActivosAnidados();
+        $data['tiposProducto'] = $this->mInventario->mmTraerTiposProducto();
+        $data['tiposMedida'] = $this->mInventario->mmTraerTiposMedida();
         $this->load->view('inventario/vProductoActualizarDatos', $data);
     }
-
-    public function ccActualizar_vProductoActualizarDatos()
-    {
-        $id_producto = $this->input->post('id_producto');
-        $datosJson = $this->mInventario->mmTraerProductoPorId($id_producto);
-        echo json_encode($datosJson);
-        //No Borrar esta linea soluciona el error de que la variable datosJson traiga todo el html de la pagina
-        die();
-    }
-
 
     public function ccTipoProducto()
     {
@@ -122,5 +106,71 @@ class cInventario extends CI_Controller
         );
         $this->mInventario->mmTipoProductoRegistrar($data);
         redirect('cInventario/ccTipoProducto');
+    }
+
+    //Funcion para actualizar los datos de un producto
+    public function ccProductoActualizarDatosG()
+    {
+        //Traer los datos nuevos del producto
+        $idProducto = $this->input->post('select_nombreProducto_vProductoActualizarDatos');
+        $nombreProducto = $this->input->post('txt_nombreProducto_vProductoActualizarDatos');
+        $precioProducto = $this->input->post('txt_precioProducto_vProductoActualizarDatos');
+        $descripcionProducto = $this->input->post('txt_decripcionProducto_vProductoActualizarDatos');
+        $codigoBarra = $this->input->post('txt_codigoBarra_vProductoActualizarDatos');
+        $tipoMedida = $this->input->post('select_medidaProducto_vProductoActualizarDatos');
+        $tipoProducto = $this->input->post('select_tipoProducto_vProductoActualizarDatos');
+        //Traer los datos antiguos del producto
+        $dataAntiguo = $this->mInventario->mmTraerProductoPorId($idProducto);
+       //Ciclo para leer los datos antiguos
+        foreach ($dataAntiguo as $row) {
+            $nombreProductoAntiguo = $row->nombre_producto;
+            $precioProductoAntiguo = $row->precio_producto;
+            $descripcionProductoAntiguo = $row->descripcion_producto;
+            $codigoBarraAntiguo = $row->codigo_barra_producto;
+            $tipoMedidaAntiguo = $row->id_medida_producto_producto;
+            $tipoProductoAntiguo = $row->id_tipo_producto_producto;
+        }
+        //Hacer un array con datos nuevos y antiguos
+        $data = array(
+            'id_producto_modificar_dato_producto' => $idProducto,
+            'nombre_producto_anterior_modificar_dato_producto' => $nombreProductoAntiguo,
+            'nombre_producto_nuevo_modificar_dato_producto' => $nombreProducto,
+            'descripcion_producto_anterior_modificar_dato_producto' => $descripcionProductoAntiguo,
+            'descripcion_producto_nuevo_modificar_dato_producto' => $descripcionProducto,
+            'codigo_barra_producto_anterior_modificar_dato_producto' => $codigoBarraAntiguo,
+            'codigo_barra_producto_nuevo_modificar_dato_producto' => $codigoBarra,
+            'id_medida_producto_anterior_modificar_dato_producto' => $tipoMedidaAntiguo,
+            'id_medida_producto_nuevo_modificar_dato_producto' => $tipoMedida,
+            'id_tipo_producto_anterior_modificar_dato_producto' => $tipoProductoAntiguo,
+            'id_tipo_producto_nuevo_modificar_dato_producto' =>  $tipoProducto,
+            'precio_anterior_modificar_dato_producto' => $precioProductoAntiguo,
+            'precio_nuevo_modificar_dato_producto' => $precioProducto,
+            'id_usuario_modificar_dato_producto' => $this->session->userdata('idUsuario'),
+            'fecha_modificar_dato_producto' => date('Y-m-d H:i:s')
+        );
+        $this->mInventario->mmProductoActualizarDatos($data);
+        redirect('cInventario/ccProductoActualizar');
+    }
+
+    //AJAX
+
+    //Actualizar los inputs de la vista de Producto: Actualizar Existencia En Inventario
+    public function ccActualizar_vProductoActualizarExistencia()
+    {
+        $id_producto = $this->input->post('id_producto');
+        $datosJson = $this->mInventario->mmTraerProductoPorId($id_producto);
+        echo json_encode($datosJson);
+        //No Borrar esta linea soluciona el error de que la variable datosJson traiga todo el html de la pagina
+        die();
+    }
+
+    //Actualizar los campos de la vista de Producto: Actualizar Datos De Producto
+    public function ccActualizar_vProductoActualizarDatos()
+    {
+        $id_producto = $this->input->post('id_producto');
+        $datosJson = $this->mInventario->mmTraerProductoPorId($id_producto);
+        echo json_encode($datosJson);
+        //No Borrar esta linea soluciona el error de que la variable datosJson traiga todo el html de la pagina
+        die();
     }
 }

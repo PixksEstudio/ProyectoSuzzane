@@ -60,6 +60,8 @@ class mInventario extends CI_Model
         $query_select = $this->db->get();
         return $query_select->result();
     }
+
+  
     
 
     //Funciones para insertar datos en la base de datos desde las vistas
@@ -74,6 +76,12 @@ class mInventario extends CI_Model
     public function mmProductoActualizarExistencia($data)
     {
         $this->db->insert('agregar_producto', $data);
+    }
+
+    //Insertar actualización de datos de producto en la base de datos a través de una tabla intermedia
+    public function mmProductoActualizarDatos($data)
+    {
+        $this->db->insert('modificar_dato_producto', $data);
     }
 
     //Insertar tipo de producto en la base de datos

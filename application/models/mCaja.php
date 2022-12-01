@@ -3,6 +3,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class mCaja extends CI_Model
 {
+
+    //Funciones para traer datos de la base de datos en la carga de las vistas
+    //Traer productos activos
+    public function mmTraerProductosActivos()
+    {
+        $this->db->select('*');
+        $this->db->from('producto');
+        $this->db->where('id_estado_producto', 1);
+        $query_select = $this->db->get();
+        return $query_select->result();
+    }
+
+    //Traer productos por id
+    public function mmTraerProductoPorId($id_producto)
+    {
+        $this->db->select('*');
+        $this->db->from('producto');
+        $this->db->where('id_producto', $id_producto);
+        $query_select = $this->db->get();
+        return $query_select->result();
+    }
+
     //Comprobar que el usuario no tenga un arqueo en estado 1, si lo tiene, no puede abrir otro
 
     public function mmAbrirArqueo($monto_arqueo, $fecha, $estado, $id_usuario)

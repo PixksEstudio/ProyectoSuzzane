@@ -25,13 +25,14 @@ class cCaja extends CI_Controller
     }
     public function ccVenta()
     {
-
-        $this->load->view('caja/vVenta');
+        //Cargar los productos
+        $data['productos'] = $this->mCaja->mmTraerProductosActivos();
+        $this->load->view('caja/vVenta', $data);
     }
-    public function ccRegistroVenta()
+    public function ccHistorialVenta()
     {
 
-        $this->load->view('caja/vRegistroVenta');
+        $this->load->view('caja/vHistorialVenta');
     }
     public function ccArqueoCierre()
     {
@@ -57,5 +58,18 @@ class cCaja extends CI_Controller
             $this->session->set_flashdata('mensaje', 'No se pudo abrir el arqueo');
             redirect('cCaja/ccArqueoAbrir');
         }
+    }
+
+    //Ajax
+
+    //Productos activos
+    public function ccActualizar_Ventas()
+    {
+     //Traer producto por id
+        $id_producto = $this->input->post('id_producto');
+        $producto = $this->mCaja->mmTraerProductoPorId($id_producto);
+        echo json_encode($producto);
+        //No borrar el die importante para que el ajax funcione
+        die();
     }
 }
